@@ -33,11 +33,13 @@ public class GridMovement : MonoBehaviour
 
     private float[] TargetAngle = new float[] {180,360};
     private int Index = 0;
+    private Footsteps footsteps;
 
     void Start()
     {
         currentPlayer = players[playerIndex];
         savedPositions = GetComponent<SavedPositions>(); 
+        footsteps = GetComponent<Footsteps>();
     }
 
     void Update()
@@ -76,6 +78,7 @@ public class GridMovement : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.Space) && isMoving == false)
         {
+            footsteps.Rotate();
             Rotating = true;
             playerIndex += 1;
             if (playerIndex == players.Length)
@@ -90,36 +93,39 @@ public class GridMovement : MonoBehaviour
 
     void CanMove(Vector3 direction)
     {
-
+        print("CanMove");
         origPos = currentPlayer.transform.position;
 
         targetPos = origPos + direction;
 
         RaycastHit hit;
-
+        Debug.DrawRay(currentPlayer.transform.position, targetPos - currentPlayer.transform.position, Color.red);
          if(Physics.Raycast(currentPlayer.transform.position, targetPos - currentPlayer.transform.position, out hit, Vector3.Distance(currentPlayer.transform.position, targetPos), layer))
-         
-       // if (hit.collider != null)
         {
+           
             //print(hit.collider.tag);
             if (hit.collider.tag.Substring(0,3) == "Key")
             {
+                print("KeyCollide");
                 //savedPositions.positions.Add();
                 bool canMove = hit.collider.GetComponent<KeyOnGrid>().OnTriggerPlayer(currentPlayer.GetComponent<Collider>());
                 if (canMove == true)
                 {
+                    footsteps.Walk();
                     SaveObjectInGame();
                     StartCoroutine(MovePlayer(direction));
                 }
             }
             else if (hit.collider.tag != "Wall" && hit.collider.tag.Substring(0, 4) != "Door")
             {
+                footsteps.Walk();
                 SaveObjectInGame();
                 StartCoroutine(MovePlayer(direction));
             }
         }
         else
         {
+            footsteps.Walk();
             SaveObjectInGame();
             StartCoroutine(MovePlayer(direction));
         }
