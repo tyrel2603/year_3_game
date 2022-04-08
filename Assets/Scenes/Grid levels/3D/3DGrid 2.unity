@@ -884,7 +884,7 @@ Transform:
   - {fileID: 1459979360}
   - {fileID: 1108147830}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &134041701
 PrefabInstance:
@@ -1045,7 +1045,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &142795432
 PrefabInstance:
@@ -1731,7 +1731,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &323112268 stripped
 Transform:
@@ -2201,6 +2201,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1270471073}
     m_Modifications:
+    - target: {fileID: 1193508609, guid: fe50b3f035fcaa04a821a17c13aae687, type: 3}
+      propertyPath: wallLightColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1193508609, guid: fe50b3f035fcaa04a821a17c13aae687, type: 3}
+      propertyPath: wallLightColor.g
+      value: 0.63358784
+      objectReference: {fileID: 0}
+    - target: {fileID: 1193508609, guid: fe50b3f035fcaa04a821a17c13aae687, type: 3}
+      propertyPath: wallLightColor.r
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4730722708118306291, guid: fe50b3f035fcaa04a821a17c13aae687, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -2507,121 +2519,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 4c6099df001cd44adb18ff95e888b816, type: 3}
   m_PrefabInstance: {fileID: 531471623}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &540105124 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7956085352960585441, guid: 745a0f77ebedd46e387e90a59942cedc, type: 3}
-  m_PrefabInstance: {fileID: 64376840}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &540105128
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 540105124}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 18b8a51f3b1ea1549a3355e0a64e38f6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  WalkSound: {fileID: 8300000, guid: 6936a4fdef980914e91b2a67f8c4b1b9, type: 3}
-  RotateSound: {fileID: 8300000, guid: 39cc60bbbf8999f428fb9dafd5d98378, type: 3}
---- !u!82 &540105129
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 540105124}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!1 &549663787
 GameObject:
   m_ObjectHideFlags: 0
@@ -2696,7 +2593,7 @@ Transform:
   - {fileID: 718832622}
   - {fileID: 1333737913}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &566324207
 PrefabInstance:
@@ -3721,7 +3618,7 @@ Transform:
   - {fileID: 583100463}
   - {fileID: 847960232}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &754776486
 GameObject:
@@ -4059,7 +3956,7 @@ Transform:
   - {fileID: 549663788}
   - {fileID: 1890709329}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &790799555
 PrefabInstance:
@@ -6883,7 +6780,7 @@ Transform:
   - {fileID: 729724934}
   - {fileID: 1902245492}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1158787928
 PrefabInstance:
@@ -11238,6 +11135,18 @@ PrefabInstance:
       propertyPath: colour
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 1193508609, guid: fe50b3f035fcaa04a821a17c13aae687, type: 3}
+      propertyPath: wallLightColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1193508609, guid: fe50b3f035fcaa04a821a17c13aae687, type: 3}
+      propertyPath: wallLightColor.g
+      value: 0.6293106
+      objectReference: {fileID: 0}
+    - target: {fileID: 1193508609, guid: fe50b3f035fcaa04a821a17c13aae687, type: 3}
+      propertyPath: wallLightColor.r
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4730722708118306291, guid: fe50b3f035fcaa04a821a17c13aae687, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -12874,7 +12783,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8263607951296266905, guid: f0c461b7189b3495ebfac75f4eb51a76, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8263607951296266905, guid: f0c461b7189b3495ebfac75f4eb51a76, type: 3}
       propertyPath: m_AnchorMax.x
