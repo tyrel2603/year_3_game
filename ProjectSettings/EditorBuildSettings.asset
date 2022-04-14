@@ -26,22 +26,28 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Grid levels/HowToPlay.unity
     guid: c3e7077c13e2c4b0c9db650515a90d11
-  - enabled: 1
-    path: Assets/Scenes/Grid levels/2D/GridLevel 1.unity
-    guid: b2548c96df86e45d981a0c2d5051cecb
-  - enabled: 1
-    path: Assets/Scenes/Grid levels/2D/GridLevel 2.unity
-    guid: 674962dd2767a43d0bb7c0c71b788809
-  - enabled: 1
-    path: Assets/Scenes/Grid levels/2D/GridLevel 3.unity
-    guid: c6353fb3bb93a4bc3bc7ca2b8baf8f9b
-  - enabled: 1
-    path: Assets/Scenes/Grid levels/2D/GridLevel 4.unity
-    guid: ba277a979941d4095b954d624c0aa3e6
-  - enabled: 1
-    path: Assets/Scenes/Grid levels/2D/GridLevel 5.unity
-    guid: 175c9f10558a946cc8128ab961949f2e
   - enabled: 0
-    path: Assets/Scenes/Old Levels/TestMap.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/Grid levels/3D/3DGrid_Easy1.unity
+    guid: 2c8ec755b12d552459e4cb4de24b8994
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/Grid levels/3D/3DGrid_Easy 3.unity
+    guid: 7a95f53e45f8673459e51bae8eda81eb
   m_configObjects: {}

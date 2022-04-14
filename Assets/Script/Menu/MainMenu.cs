@@ -7,7 +7,7 @@ public class MainMenu : MonoBehaviour
 {
   public void PlayGame ()
     {
-        SceneManager.LoadScene("3DGrid");
+        SceneManager.LoadScene("3DGrid_Easy1");
     }
 
    public void LevelSelect()
@@ -29,4 +29,9 @@ public class MainMenu : MonoBehaviour
     {
         Application.Quit();
     }
+    public void Settings()
+    {
+        SceneManager.LoadScene("Settings");
+    }
+
 }
